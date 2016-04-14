@@ -19,7 +19,7 @@ driver.maximize_window() # If platform is Linux instead use: driver.set_window_s
 def test_one():
 	try:
 		driver.get("http://python.org/")
-		assert "Python" in driver.title
+		#assert "Python" in driver.title
 		elem = driver.find_element_by_name("q")
 		elem.send_keys("documentation")
 		elem.send_keys(Keys.RETURN)
