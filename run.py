@@ -8,9 +8,9 @@ from selenium.webdriver.common.keys import Keys
 driver = webdriver.Remote(
    command_executor='http://192.168.43.149:4444/wd/hub',
    desired_capabilities={
-            "browserName": "internet explorer"})
+            #"browserName": "internet explorer"})
             #"browserName": "chrome"})
-            #"browserName": "firefox"})
+            "browserName": "firefox"})
 
 driver.implicitly_wait(30)
 driver.maximize_window() # If platform is Linux instead use: driver.set_window_size(1920,1080)
